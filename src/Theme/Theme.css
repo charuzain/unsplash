@@ -1,0 +1,14 @@
+.navbar {
+  border: 2px solid red;
+  padding: 1rem;
+  align-self: flex-end;
+}
+.navbar__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.navbar__icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}/*# sourceMappingURL=Theme.css.map */
