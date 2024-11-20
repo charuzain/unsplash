@@ -3,11 +3,18 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   height: auto;
+  padding: 1rem;
+
 
   &__image {
     height: 10rem;
     width: 100%;
     object-fit: cover;
+  }
 
+  &__result{
+   display: block;
+   margin: auto;
+    color: rgba(100, 92, 255, 1);
   }
 }

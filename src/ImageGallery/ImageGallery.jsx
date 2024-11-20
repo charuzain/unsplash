@@ -26,19 +26,25 @@ const { isPending, error, data } = useQuery({
   queryKey: ['searchImage', searchTerm],
   queryFn: () => fetchImage(searchTerm),
 });
+  
 
   if (isPending) return 'Loading...'
 
   if (error) return 'An error has occurred: ' + error.message
- 
+
   return (
-    <article className="gallery">
-      {data.map((item) => (
-        <div key={item.id} className="gallery__container">
-          <img src={item.urls.regular} className="gallery__image" />
-        </div>
-      ))}
-    </article>
+    <>
+      {data.length === 0 && (
+        <p className="gallery__result">No Image found with term {searchTerm}</p>
+      )}
+      <article className="gallery">
+        {data.map((item) => (
+          <div key={item.id} className="gallery__container">
+            <img src={item.urls.regular} className="gallery__image" />
+          </div>
+        ))}
+      </article>
+    </>
   );
 }
 
