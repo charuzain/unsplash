@@ -1,16 +1,20 @@
-import { useState } from "react";
-import './SearchForm.scss'
+import './SearchForm.scss';
+import { useSelector, useDispatch } from 'react-redux';
+import {setSearchTerm} from '../slice/searchSlice.js'
 
 const SearchForm = () => {
-  const [search, setSearchTerm] = useState('')
+
+  const search = useSelector(state => state.search.value)
+
+  const dispatch = useDispatch();
   
   const formSubmitHandler = (event) => {
     event.preventDefault()
-    console.log(event.target.value)
+    dispatch(setSearchTerm(e.target.value));
   }
 
   const inputHandler = (e) => {
-    setSearchTerm(e.target.value);
+    dispatch(setSearchTerm(e.target.value));
     
   }
   return (

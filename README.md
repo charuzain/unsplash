@@ -6,4 +6,6 @@
 - npm i react-router-dom
 -npm i @tanstack/react-query
 -npm i react-icons
--npm i sass
+-npm i sass , watch saas and gitignore *.css.map
+- npm install @reduxjs/toolkit
+- npm install @reduxjs/toolkit
