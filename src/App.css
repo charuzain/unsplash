@@ -1,8 +1,6 @@
-.container {
-  border: 2px solid black;
+.body-container {
   max-width: 70rem;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }/*# sourceMappingURL=App.css.map */

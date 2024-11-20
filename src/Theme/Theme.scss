@@ -1,12 +1,10 @@
 .navbar {
-  border: 2px solid red;
   padding: 1rem;
   align-self: flex-end;
 
   &__btn {
     border: none;
     background-color: transparent;
-    // padding: 1rem;
     cursor: pointer;
   }
 
@@ -15,3 +13,4 @@
     cursor: pointer;
   }
 }
+

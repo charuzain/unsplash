@@ -1,1 +1,12 @@
-/*# sourceMappingURL=ImageGallery.css.map */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  height: auto;
+}
+.gallery__image {
+  height: 10rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=ImageGallery.css.map */
